@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ChargeUp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_home_fragment">Home</string>
+    <string name="hello_account_fragment">Account</string>
+    <string name="hello_shop_fragment">Shop</string>
+    <string name="hello_settings_fragment">Settings</string>
+    <string name="hello_workout_fragment">Workout</string>
 </resources>
