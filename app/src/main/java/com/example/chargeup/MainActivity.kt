@@ -10,12 +10,18 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     lateinit var bottomNav: BottomNavigationView
-
+    lateinit var dbHelper: DatabaseHelper
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+        // Инициализация DatabaseHelper
+        dbHelper = DatabaseHelper(this)
 
+        // Создание базы данных и таблиц (если они ещё не существуют)
+        val db = dbHelper.writableDatabase
+
+        bottomNav = findViewById(R.id.bottomNav)
         bottomNav = findViewById(R.id.bottomNav)
 
         // Устанавливаем Home как выбранный элемент при запуске

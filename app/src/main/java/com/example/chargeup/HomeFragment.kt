@@ -23,10 +23,22 @@ class HomeFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: WorkoutAdapter
-
+    private lateinit var databaseOperations: DatabaseOperations
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // Здесь можно инициализировать данные или выполнить действия, не связанные с UI
+        databaseOperations = DatabaseOperations(requireContext())
+//        databaseOperations.addZaryadka("Сила")
+//        databaseOperations.addZaryadka("Растяжка")
+//        databaseOperations.addZaryadka("Выносливость")
+//        databaseOperations.deleteZaryadka(4)
+//        databaseOperations.deleteZaryadka(5)
+//        databaseOperations.deleteZaryadka(6)
+//        databaseOperations.deleteZaryadka(7)
+//        databaseOperations.deleteZaryadka(8)
+//        databaseOperations.deleteZaryadka(9)
+
+
     }
 
     override fun onCreateView(
