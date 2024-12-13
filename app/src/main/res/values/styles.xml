@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ваш стиль для BottomNavigationView -->
+    <style name="BottomNavigationViewStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <!-- Размер иконок -->
+        <item name="itemIconSize">32dp</item>
+        <!-- Отступ сверху у иконок -->
+        <item name="itemPaddingTop">0dp</item>
+        <!-- Отступ снизу у текста -->
+        <item name="itemPadding">0dp</item>
+
+    </style>
+    <style name="TextAppearance">
+        <item name="android:paddingTop">8dp</item> <!-- Сдвиг текста вниз -->
+        <item name="android:textSize">12sp</item> <!-- Размер текста -->
+    </style>
+
+</resources>

@@ -18,16 +18,31 @@
         <!-- Ваши фрагменты или другие элементы здесь -->
     </FrameLayout>
 
-    <!-- BottomNavigationView с высотой 100dp -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNav"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="#000000"
-        app:itemBackground="@drawable/item_background_selector"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/nav_menu" />
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="631dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginTop="631dp"
+            app:menu="@menu/nav_menu"
+            android:background="@drawable/rounded_top_corners"
+            style="@style/BottomNavigationViewStyle"
+            app:itemIconTint="@color/menu_item_icon_color"
+            app:itemBackground="@drawable/item_background_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- BottomNavigationView с высотой 100dp -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
